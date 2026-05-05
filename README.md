@@ -1,5 +1,14 @@
 # Metaspades memory prediction
-Framework to predict memory requirement for metaspades using kmer statistics, biome, and input file size 
+## Framework to predict memory requirement for metaspades using kmer statistics, biome, and input file size 
+
+![Retry and waste](plots/retry_and_waste.png)
+
+**Resource-aware memory allocation for metagenome assembly.**  
+(A) Schematic illustration of the job retry policy implemented in Galaxy and MGnify for a task requiring 120 GB of memory. Three initial allocation scenarios (25, 110, and 160 GB) are shown, highlighting the trade-off between underestimation (light blue) and overestimation (green). In some cases, over-allocation reduces total resource consumption by avoiding repeated job failures.  
+(B) Predicted memory requirements from different pipeline heuristics and machine learning models based on sample-derived features.  
+(C) Relative memory savings achieved by each model and heuristic compared to the default Galaxy memory allocation strategy.
+
+## Workflow to generate the results
 
 1. **Get memory vs ID file from EBI**
 
