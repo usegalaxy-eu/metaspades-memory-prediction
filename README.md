@@ -1,7 +1,7 @@
 # Metaspades memory prediction
 ## Framework to predict memory requirement for metaspades using kmer statistics, biome, and input file size 
 
-![Retry and waste](plots/retry_and_waste.png)
+![Retry and waste](results/retry_and_waste.png)
 
 **Resource-aware memory allocation for metagenome assembly.**  
 (A) Schematic illustration of the job retry policy implemented in Galaxy and MGnify for a task requiring 120 GB of memory. Three initial allocation scenarios (25, 110, and 160 GB) are shown, highlighting the trade-off between underestimation (light blue) and overestimation (green). In some cases, over-allocation reduces total resource consumption by avoiding repeated job failures.  
@@ -12,11 +12,11 @@
 
 1. **Get memory vs ID file from EBI**
 
-   * File: [mgnify_assemblies_stats](input/mgnify_assemblies_stats.csv)
+   * File: [mgnify_assemblies_stats](data/mgnify_assemblies_stats.csv)
 
 2. **Add SRR ID and subset samples**
 
-   * Notebook: [add_SSR_to_assembly_stats.ipynb](add_SSR_to_assembly_stats.ipynb)
+   * Notebook: [add_SSR_to_assembly_stats.ipynb](bin/add_SSR_to_assembly_stats.ipynb)
 
 3. **Upload SRR ID file to Galaxy**
 
@@ -30,13 +30,13 @@
 5. **Download kmer statistics**
 
    * Label: `kmer-stats`
-   * Example file: [updated_mgnify_assemblies_stats_v3.15.3_metaspades_kmer10_stats.csv](output/updated_mgnify_assemblies_stats_v3.15.3_metaspades_kmer10_stats.csv)
+   * Example file: [updated_mgnify_assemblies_stats_v3.15.3_metaspades_kmer10_stats.csv](results/updated_mgnify_assemblies_stats_v3.15.3_metaspades_kmer10_stats.csv)
 
 6. **Add file size to kmer stats**
 
-   * Notebook: [add_file_size_to_kmer_stats.ipynb](add_file_size_to_kmer_stats.ipynb)
+   * Notebook: [add_file_size_to_kmer_stats.ipynb](bin/add_file_size_to_kmer_stats.ipynb)
 
 7. **Run evaluation notebook**
 
-   * Notebook: [evaluation_metrics.ipynb](evaluation_metrics.ipynb)
+   * Notebook: [evaluation_metrics.ipynb](bin/evaluation_metrics.ipynb)
 
