@@ -61,8 +61,7 @@ Predictive performance was measured with RMSE and R², then translated into oper
 
 Both densities were estimated with 60 log-spaced histogram bins over the combined memory range (~1-300 GB). For each model, 4,000 Monte Carlo iterations were run, each sampling 1,000 jobs with replacement according to $w_i$. Results are reported as mean and 95% interval (2.5-97.5 percentiles) of wasted GB·h per 1,000 jobs.
 
-
-7. **Run evaluation notebook** using [`evaluation_metrics.ipynb` notebook](bin/evaluation_metrics.ipynb) which uses the following scripts:
+**Run evaluation notebook** using [`evaluation_metrics.ipynb` notebook](bin/evaluation_metrics.ipynb) which uses the following scripts:
    1. [`bin/gaussian_process.py`](bin/gaussian_process.py) to: 
       - Loads feature/label tables and prepares features.
       - Trains a Gaussian Process regressor for memory prediction.
@@ -80,3 +79,16 @@ Both densities were estimated with 60 log-spaced histogram bins over the combine
 
 ## Results
 
+### Memory prediction performance comparison
+
+![Memory prediction comparison](results/memory_prediction_comparison.png)
+
+*Figure 1. TODO.*
+
+---
+
+### Resource-aware retry behaviour and memory waste
+
+![Retry and waste analysis](results/retry_and_waste.png)
+
+*Figure 2. TODO.*
