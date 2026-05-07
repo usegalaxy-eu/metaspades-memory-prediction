@@ -1,0 +1,19 @@
+Model,Features,R²,RMSE,Waste per 1000 jobs (Million GB·h)
+Random Forest,K-mers + File size + Biome,0.678518188156993,31.04605736486715,3.2 ± 1.51
+Random Forest,K-mers + File size,0.6487597279987489,32.45117334836127,3.17 ± 1.56
+Random Forest,Biome,0.4669523007058817,39.977100186554836,2.45 ± 0.79
+LinearRegression,Biome,0.46548074222773494,40.03224355871863,2.47 ± 0.8
+Gaussian Processes (Quantile 0.9),Biome,0.4602415943012941,40.227955323544705,2.64 ± 0.96
+Gaussian Processes (Quantile 0.99),Biome,0.4469413539644279,40.720569667030574,2.88 ± 1.15
+LinearRegression,K-mers + File size + Biome,0.2858719082468696,46.2717911009007,4.17 ± 2.18
+Gaussian Processes (Quantile 0.9),K-mers + File size + Biome,0.21265000655198774,48.58611413656566,2.49 ± 0.9
+LinearRegression,File size,0.17835444928624877,49.63299766212836,3.53 ± 1.32
+Gaussian Processes (Quantile 0.9),K-mers + File size,0.11295754106090095,51.57039478206006,2.69 ± 0.99
+Random Forest,File size,0.023788342649532446,54.10037141523076,4.51 ± 2.06
+LinearRegression,K-mers + File size,-0.02909782011007711,55.54648490245559,4.42 ± 2.11
+Gaussian Processes (Quantile 0.99),K-mers + File size + Biome,-0.5342770999738258,67.82349310694978,3.35 ± 1.26
+Gaussian Processes (Quantile 0.9),File size,-0.6996338026497879,71.38483037376103,20.69 ± 17.91
+Gaussian Processes (Quantile 0.99),K-mers + File size,-0.7720886950869599,72.89050841658648,2.88 ± 0.71
+Gaussian Processes (Quantile 0.99),File size,-1.010884660387513,77.64649076481105,5.23 ± 1.67
+MGnify Heuristic default,Heuristic,-1.4574114668506288,85.83554958776526,3.27 ± 1.01
+Galaxy Heuristic default,Heuristic,-18.191939502714426,239.87648975478746,9.03 ± 1.51

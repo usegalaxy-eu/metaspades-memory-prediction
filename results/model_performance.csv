@@ -1,0 +1,19 @@
+raw_name,Model,Features,Quantile,R²,RMSE
+Random Forest (K-mers + File size + Biome) default,Random Forest,K-mers + File size + Biome,-,0.678518188156993,31.04605736486715
+Random Forest (K-mers + File size) default,Random Forest,K-mers + File size,-,0.6487597279987489,32.45117334836127
+Random Forest (Biome) default,Random Forest,Biome,-,0.4669523007058817,39.977100186554836
+LinearRegression (Biome) default,LinearRegression,Biome,-,0.46548074222773494,40.03224355871863
+Gaussian Processes (Biome) 0.9,Gaussian Processes,Biome,0.9,0.4602415943012941,40.227955323544705
+Gaussian Processes (Biome) 0.99,Gaussian Processes,Biome,0.99,0.4469413539644279,40.720569667030574
+LinearRegression (K-mers + File size + Biome) default,LinearRegression,K-mers + File size + Biome,-,0.2858719082468696,46.2717911009007
+Gaussian Processes (K-mers + File size + Biome) 0.9,Gaussian Processes,K-mers + File size + Biome,0.9,0.21265000655198774,48.58611413656566
+LinearRegression (File size) default,LinearRegression,File size,-,0.17835444928624877,49.63299766212836
+Gaussian Processes (K-mers + File size) 0.9,Gaussian Processes,K-mers + File size,0.9,0.11295754106090095,51.57039478206006
+Random Forest (File size) default,Random Forest,File size,-,0.023788342649532446,54.10037141523076
+LinearRegression (K-mers + File size) default,LinearRegression,K-mers + File size,-,-0.02909782011007711,55.54648490245559
+Gaussian Processes (K-mers + File size + Biome) 0.99,Gaussian Processes,K-mers + File size + Biome,0.99,-0.5342770999738258,67.82349310694978
+Gaussian Processes (File size) 0.9,Gaussian Processes,File size,0.9,-0.6996338026497879,71.38483037376103
+Gaussian Processes (K-mers + File size) 0.99,Gaussian Processes,K-mers + File size,0.99,-0.7720886950869599,72.89050841658648
+Gaussian Processes (File size) 0.99,Gaussian Processes,File size,0.99,-1.010884660387513,77.64649076481105
+MGnify Heuristic default,MGnify Heuristic default,Heuristic,-,-1.4574114668506288,85.83554958776526
+Galaxy Heuristic default,Galaxy Heuristic default,Heuristic,-,-18.191939502714426,239.87648975478746
